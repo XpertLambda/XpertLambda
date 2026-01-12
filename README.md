@@ -15,53 +15,78 @@ C/C++, Python, Bash, PowerShell, Java, SQL, x86/x64 Assembly
 Penetration Testing, IDS/IPS (Snort, Prelude), OSSEC, Wireshark, Metasploit, Hashcat, Memory Forensics
 
 **Infrastructure & Virtualization**  
-Docker, Proxmox VE, VMware, Linux Administration (Arch, CentOS), Windows Internals
+Docker, Proxmox VE, VMware, Vagrant/KVM, Ansible, Linux Administration (Arch, CentOS), Windows Internals
 
 **Networking**  
 TCP/IP Stack, VPN/IPSec, VLAN Configuration, Deep Packet Inspection, Socket Programming
 
 ---
 
-## 🚀 Featured Security Projects
+## 🚀 Featured Projects
 
-### [SysRecon - Windows Audit & Forensic Tool](https://github.com/XpertLambda/SysRecon)
-Professional-grade system auditing tool written in **C++** for comprehensive Windows security assessment.
+### [ContainerPool](https://github.com/XpertLambda/ContainerPool)
+Self-hosted PaaS platform featuring pre-initialized container pools with instant provisioning capabilities (<1s deployment).
 
-- Performs deep enumeration of privileges, services, scheduled tasks, and registry persistence mechanisms
-- Automated risk scoring engine with configurable thresholds
-- Stealth mode operation with multi-format reporting (JSON/PDF)
-- **Technologies:** Windows API, Registry Manipulation, ACL Analysis
+- Multi-tenant user management with file upload support
+- Automated infrastructure orchestration using Ansible and Vagrant/KVM
+- Flask-based REST API with Docker backend integration
+- **Technologies:** Docker, Flask, Ansible, Vagrant, Shell Scripting
 
-### [Cyber Security CTF Environment](https://github.com/XpertLambda/CTF-Proxmox)
-Full-scale Capture The Flag platform deployed on **Proxmox** with 15+ challenges spanning web exploitation, reverse engineering, and incident response.
+### [SysRecon](https://github.com/XpertLambda/SysRecon) *(In Development)*
+Comprehensive Windows auditing and security assessment tool designed for IT administrators, SOC teams, and penetration testers.
 
-- Automated infrastructure provisioning using Ansible and Proxmox API
-- Isolated container architecture for challenge segregation
-- Integrated scoring system with real-time monitoring dashboard
-- **Technologies:** Proxmox VE, Docker, Network Segmentation, Firewall Rules
+- Automated collection and analysis of system security configurations
+- Security posture reporting and vulnerability identification
+- **Technologies:** C++, Windows API, Security Assessment
 
-### [Intrusion Detection System Deployment](https://github.com/XpertLambda/CentOS-Security)
-Multi-tier defensive security architecture simulating enterprise network protection.
+### [Crasher](https://github.com/XpertLambda/Crasher)
+Cryptographic toolkit for hash decryption and wordlist generation with multiple attack modes.
 
-- Implemented layered defense with Prelude-IDS, Snort, OSSEC, and iptables
-- Real-time correlation of security events across multiple detection engines
-- Custom rule development for SSH brute-force and lateral movement detection
-- **Technologies:** SIEM Configuration, Log Aggregation, Network Traffic Analysis
+- Hash decryption support for MD5, SHA1, and SHA256 algorithms
+- Multiple attack vectors: ASCII brute-force, random generation, and wordlist-based attacks
+- Optimized wordlist generation engine for password cracking operations
+- **Technologies:** C, Cryptography, Performance Optimization
 
-### [Auto Arch-Chroot Utility](https://github.com/XpertLambda/Auto-Arch-Chroot)
-Automated recovery tool for Arch Linux systems, published to the **AUR** (Arch User Repository).
+### [Multiplayer-AOE-Protocol](https://github.com/XpertLambda/Multiplayer-AOE-Protocol)
+Real-time strategy game inspired by Age of Empires II with full multiplayer networking architecture.
 
-- Intelligent detection of LUKS-encrypted volumes and Btrfs subvolumes
-- Automated bind mounting of critical system directories
-- Streamlines complex system recovery workflows into a single command
-- **Technologies:** Bash Scripting, LUKS/dm-crypt, Linux Boot Process
+- Hybrid Python-C communication system for low-latency gameplay
+- Custom networking protocol for synchronized multiplayer sessions
+- Real-time resource management and unit coordination
+- **Technologies:** Python, C, Socket Programming, Network Protocols
+
+### [AIge-Of-EmpAIres](https://github.com/XpertLambda/AIge-Of-EmpAIres)
+Sophisticated RTS game featuring intelligent AI opponents powered by decision tree algorithms.
+
+- Advanced AI systems for resource management and strategic planning
+- Autonomous unit training, structure building, and tactical combat
+- Decision tree implementation for dynamic opponent behavior
+- **Technologies:** Python, Artificial Intelligence, Game Development
+
+### [MiniGlibC](https://github.com/XpertLambda/MiniGlibC)
+Minimalistic C library implementing core functionalities from scratch.
+
+- Custom implementations of memory management primitives
+- String handling and file operations
+- Shell-like utility functions for system programming
+- **Technologies:** C, Systems Programming, Low-Level Development
+
+### [Auto-Archchroot](https://github.com/XpertLambda/Auto-Archchroot)
+Intelligent automation tool for Arch Linux system recovery and chroot operations.
+
+- Automatic system configuration analysis and detection
+- LUKS encryption and Btrfs subvolume support
+- Generates ready-to-use recovery scripts for live environment troubleshooting
+- **Technologies:** Python, Bash, Linux Internals, System Recovery
 
 ---
 
 ## 📬 Connect With Me
 
+**GitHub:** [github.com/XpertLambda](https://github.com/XpertLambda)  
 **LinkedIn:** [linkedin.com/in/ahmad-msaad](https://www.linkedin.com/in/ahmad-msaad)  
 **Email:** ahmad.saad@insa-cvl.fr  
+**Discord:** thelambda  
 **Languages:** French (B2) • English (B2) • Arabic (Native)
 
 ---
