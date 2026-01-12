@@ -61,6 +61,20 @@ Enterprise-grade secure Linux environment integrating centralized identity manag
 
 ---
 
+### [Auto-Archchroot](https://github.com/XpertLambda/Auto-Archchroot)
+*January 2025*
+
+Intelligent automation framework for Arch Linux system recovery and chroot environment configuration.
+
+**Features:**
+- Automatic detection and analysis of system configurations including bootloader and partition schemes
+- Native support for LUKS full-disk encryption and Btrfs subvolume architectures
+- Generates executable recovery scripts for live environment troubleshooting and repair operations
+
+**Stack:** Python, Bash, Linux Internals, Cryptography (LUKS), Filesystem Management (Btrfs)
+
+---
+
 ### [ContainerPool](https://github.com/XpertLambda/ContainerPool)
 *January 2026 • Academic Project*
 
@@ -87,20 +101,6 @@ Comprehensive Windows security auditing framework designed for IT administrators
 - Generates detailed compliance and hardening reports
 
 **Stack:** C++, Windows API, Security Assessment Frameworks
-
----
-
-### [Auto-Archchroot](https://github.com/XpertLambda/Auto-Archchroot)
-*January 2025*
-
-Intelligent automation framework for Arch Linux system recovery and chroot environment configuration.
-
-**Features:**
-- Automatic detection and analysis of system configurations including bootloader and partition schemes
-- Native support for LUKS full-disk encryption and Btrfs subvolume architectures
-- Generates executable recovery scripts for live environment troubleshooting and repair operations
-
-**Stack:** Python, Bash, Linux Internals, Cryptography (LUKS), Filesystem Management (Btrfs)
 
 ---
 
