@@ -2,7 +2,7 @@
 
 **Cybersecurity Engineering Student | Security Researcher & Tool Developer**
 
-Fourth-year Cybersecurity and Information Technology Engineering student at **INSA Centre Val de Loire**, specializing in secure system architecture, automation, and low-level security tooling. Currently seeking an **Engineering / Business Intelligence internship** starting April 2026.
+Fourth-year Cybersecurity and Information Technology Engineering student at **INSA Centre Val de Loire**, specializing in secure system architecture, automation, and low-level security tooling. Currently seeking an **Cybersecurity Engineering internship** starting April 2026.
 
 ---
 
