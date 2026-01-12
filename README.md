@@ -6,7 +6,7 @@ Fourth-year Cybersecurity and Information Technology Engineering student at **IN
 
 ---
 
-## 🛡️ Core Competencies
+## Core Competencies
 
 ### Security Operations & Analysis
 Penetration Testing • Intrusion Detection Systems (Snort, Prelude SIEM) • Host-based Intrusion Detection (OSSEC) • Network Traffic Analysis (Wireshark) • Exploitation Frameworks (Metasploit) • Password Cracking (Hashcat) • Memory Forensics • Security Event Correlation • Vulnerability Assessment
@@ -28,7 +28,7 @@ Kerberos Key Distribution Center (KDC) • Network File System Security (NFSv4 w
 
 ---
 
-## 🚀 Projects
+## Projects
 
 ### [Cyber Security CTF Environment](https://github.com/XpertLambda/CTF-Proxmox)
 *Ongoing Development*
@@ -176,7 +176,7 @@ High-performance cryptographic toolkit for hash analysis and password recovery o
 
 ---
 
-## 📬 Contact
+## Contact
 
 **GitHub:** [github.com/XpertLambda](https://github.com/XpertLambda)  
 **LinkedIn:** [linkedin.com/in/ahmad-msaad](https://www.linkedin.com/in/ahmad-msaad)  
