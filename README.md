@@ -2,7 +2,7 @@
 
 **Cybersecurity Engineering Student | Security Researcher & Tool Developer**
 
-Fourth-year Cybersecurity and Information Technology Engineering student at **INSA Centre Val de Loire**, specializing in secure system architecture, automation, and low-level security tooling. Currently seeking a **Cybersecurity Engineering internship** starting **April 2026**.
+Fourth-year Cybersecurity and Information Technology Engineering student at **INSA Centre Val de Loire**, specializing in secure system architecture, automation, and low-level security tooling.
 
 ---
 
@@ -30,7 +30,7 @@ Kerberos Key Distribution Center (KDC) • Network File System Security (NFSv4 w
 
 ## Projects
 
-### [Cyber Security CTF Environment](https://github.com/XpertLambda/CTF-Proxmox)
+### [Cyber Security CTF Environment](https://github.com/XpertLambda/CTF)
 *Ongoing Development*
 
 Full-scale Capture The Flag platform deployed on Proxmox infrastructure featuring 15+ security challenges across web exploitation, reverse engineering, and incident response.
@@ -105,7 +105,7 @@ Comprehensive Windows security auditing framework designed for IT administrators
 ---
 
 ### [Multiplayer-AOE-Protocol](https://github.com/XpertLambda/Multiplayer-AOE-Protocol)
-*March 2025 • Academic Project*
+Team Lead (6 Members) | *March 2025 • Academic Project*
 
 Real-time strategy game inspired by Age of Empires II featuring custom multiplayer networking architecture.
 
@@ -119,7 +119,7 @@ Real-time strategy game inspired by Age of Empires II featuring custom multiplay
 ---
 
 ### [AIge-Of-EmpAIres](https://github.com/XpertLambda/AIge-Of-EmpAIres)
-*January 2025 • Academic Project*
+Team Lead (7 Members) | *January 2025 • Academic Project*
 
 Real-time strategy game featuring intelligent AI opponents powered by decision tree algorithms.
 
