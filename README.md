@@ -42,7 +42,7 @@ Developed a comprehensive suite of 16 cybersecurity challenges across seven dist
 - Linux Privilege Escalation: Created lab environments for identifying misconfigured SUID binaries, world-writable cron jobs, and persistent backdoor detection for incident response training.
 - Forensics & OSINT: Integrated challenges involving forensic extraction of deleted files from ZIP archives and git repository history, alongside OSINT reconnaissance using the Sherlock tool.
 
-**Stack:* Active Directory (megacorp.local), Windows Server (DC01, FS01, SQL01) , Linux (Ubuntu/Debian-based) , Kerberos (TGT/TGS) , Impacket Suite , Rubeus , Mimikatz , Wireshark , nmap , Burp Suite , Sherlock (OSINT) , Git , WPA2/EAPOL , Hashcat/John the Ripper , SQL/LDAP
+**Stack:** Active Directory (megacorp.local), Windows Server (DC01, FS01, SQL01) , Linux (Ubuntu/Debian-based) , Kerberos (TGT/TGS) , Impacket Suite , Rubeus , Mimikatz , Wireshark , nmap , Burp Suite , Sherlock (OSINT) , Git , WPA2/EAPOL , Hashcat/John the Ripper , SQL/LDAP
 
 ---
 
