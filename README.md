@@ -33,16 +33,20 @@ Kerberos Key Distribution Center (KDC) • Network File System Security (NFSv4 w
 ### [Cyber Security CTF Environment](https://github.com/XpertLambda/CTF)
 *Ongoing Development*
 
-Developed a comprehensive suite of 16 cybersecurity challenges across seven distinct security domains, designed for the STI-4A INSA CVL CTF. The collection is structured into Beginner, Intermediate, and Advanced tracks to facilitate progressive skill acquisition in offensive and defensive security.
+Full-scale Capture The Flag platform deployed on a **Proxmox VE** hypervisor, featuring a dynamic orchestration layer and automated network isolation for 15+ specialized security challenges.
 
-**Key Achievements:**
-- Advanced Active Directory Simulation: Engineered a high-complexity "Hard" challenge titled "The Golden Ticket to Corporate Espionage," simulating a full-scale AD penetration test. The attack chain involves Kerberoasting, Silver Ticket forging, and domain dominance via Golden Tickets and DCSync.
-- Web Application Exploitation: Designed multi-stage scenarios covering XXE (XML External Entity) injection, JWT token manipulation, LDAP injection, and blind SQL injection chains.
-- Network & Wireless Security: Authored challenges focused on cleartext HTTP traffic analysis, WPA2 4-way handshake cracking, and exploiting weak TLS configurations through Man-in-the-Middle (MitM) interceptions.
-- Linux Privilege Escalation: Created lab environments for identifying misconfigured SUID binaries, world-writable cron jobs, and persistent backdoor detection for incident response training.
-- Forensics & OSINT: Integrated challenges involving forensic extraction of deleted files from ZIP archives and git repository history, alongside OSINT reconnaissance using the Sherlock tool.
+**Core Infrastructure & Features:**
+- **Dynamic Orchestration:** Developed a custom **Python Manager** that interacts directly with the **Proxmox API** to automate VM provisioning, resource allocation, and life-cycle management.
+- **Advanced Network Architecture:** Engineered a multi-tier network using **OPNsense** as a centralized gateway/firewall, managing internal `10.0.0.0/24` segments and remote **OpenVPN** access for students.
+- **Un-bypassable Security:** Implemented Proxmox host-level firewall rules at the `tap` interface level, ensuring network isolation remains intact even against users with `root` privileges inside the VM.
+- **Resilient Service Deployment:** Deployed a **Docker-based CTFd** environment on Debian, featuring optimized routing tables (`/etc/network/interfaces` post-up locks) and daemon configurations to prevent container-driven gateway hijacking.
+- **Challenge Integrity:** Designed isolated virtual segments and granular firewall policies to prevent cross-contamination and ensure a fair competition environment.
 
-**Stack:** Active Directory (megacorp.local), Windows Server (DC01, FS01, SQL01) , Linux (Ubuntu/Debian-based) , Kerberos (TGT/TGS) , Impacket Suite , Rubeus , Mimikatz , Wireshark , nmap , Burp Suite , Sherlock (OSINT) , Git , WPA2/EAPOL , Hashcat/John the Ripper , SQL/LDAP
+**Technical Stack:**
+- **Hypervisor:** Proxmox VE
+- **Security & Routing:** OPNsense, OpenVPN, Firewall Engineering
+- **Orchestration:** Python (Proxmox API), Ansible
+- **DevOps:** Docker, Debian Linux, Shell Scripting
 
 ---
 
