@@ -2,7 +2,7 @@
 
 **Cybersecurity Engineering Student | Security Researcher & Tool Developer**
 
-Fourth-year Cybersecurity and Information Technology Engineering student at **INSA Centre Val de Loire**, specializing in secure system architecture, automation, and low-level security tooling.
+Cybersecurity and Information Technology Engineering student, specializing in secure system architecture, automation, and low-level security tooling.
 
 ---
 
