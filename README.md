@@ -1,195 +1,71 @@
-# Ahmad Saad
+# `XpertLambda`
 
-**Cybersecurity Engineering Student | Security Researcher & Tool Developer**
+**Cybersecurity Engineering Student - Security Researcher & Low-Level Tooling Developer**
 
-Cybersecurity and Information Technology Engineering student, specializing in secure system architecture, automation, and low-level security tooling.
-
----
-
-## Core Competencies
-
-### Security Operations & Analysis
-Penetration Testing • Intrusion Detection Systems (Snort, Prelude SIEM) • Host-based Intrusion Detection (OSSEC) • Network Traffic Analysis (Wireshark) • Exploitation Frameworks (Metasploit) • Password Cracking (Hashcat) • Memory Forensics • Security Event Correlation • Vulnerability Assessment
-
-### Systems & Infrastructure
-Kernel-based Virtual Machines (KVM) • Container Orchestration (Docker) • Enterprise Virtualization (Proxmox VE, VMware) • Infrastructure as Code (Ansible, Vagrant) • Linux System Hardening (Arch, CentOS, Gentoo) • Windows Internals • Mandatory Access Control (SELinux, grsecurity) • Public Key Infrastructure (PKI/CA)
-
-### Network Engineering
-Socket Programming • TCP/IP Stack Implementation • VLAN Segmentation • VPN/IPSec Configuration • Deep Packet Inspection • Custom Protocol Design • Network Security Architecture
-
-### Development & Programming
-**Systems Programming:** C/C++, x86/x64 Assembly  
-**Automation & Scripting:** Python, Bash, PowerShell  
-**Backend Development:** Flask REST APIs, SQL  
-**Security Tooling:** Windows API, Linux Kernel Modules
-
-### Authentication & Identity Management
-Kerberos Key Distribution Center (KDC) • Network File System Security (NFSv4 with krb5p/krb5i) • Principal Management • Centralized Authentication Architecture
+Security engineer in training, focused on the layers most tooling skips: firmware, kernels, network protocols, and the hardened infrastructure that ties them together. I build offensive and defensive tools from scratch - mostly in **C, C++, and Python** - and design secure systems end to end, from CAN-bus attack labs to Kerberos-backed Unix estates.
 
 ---
 
-## Projects
+## Focus Areas
 
-### [Cyber Security CTF Environment](https://github.com/XpertLambda/CTF)
-*Ongoing Development*
-
-Full-scale Capture The Flag platform deployed on a **Proxmox VE** hypervisor, featuring a dynamic orchestration layer and automated network isolation for 15+ specialized security challenges.
-
-**Core Infrastructure & Features:**
-- **Dynamic Orchestration:** Developed a custom **Python Manager** that interacts directly with the **Proxmox API** to automate VM provisioning, resource allocation, and life-cycle management.
-- **Advanced Network Architecture:** Engineered a multi-tier network using **OPNsense** as a centralized gateway/firewall, managing internal `10.0.0.0/24` segments and remote **OpenVPN** access for students.
-- **Un-bypassable Security:** Implemented Proxmox host-level firewall rules at the `tap` interface level, ensuring network isolation remains intact even against users with `root` privileges inside the VM.
-- **Resilient Service Deployment:** Deployed a **Docker-based CTFd** environment on Debian, featuring optimized routing tables (`/etc/network/interfaces` post-up locks) and daemon configurations to prevent container-driven gateway hijacking.
-- **Challenge Integrity:** Designed isolated virtual segments and granular firewall policies to prevent cross-contamination and ensure a fair competition environment.
-
-**Technical Stack:**
-- **Hypervisor:** Proxmox VE
-- **Security & Routing:** OPNsense, OpenVPN, Firewall Engineering
-- **Orchestration:** Python (Proxmox API), Ansible
-- **DevOps:** Docker, Debian Linux, Shell Scripting
+- **Offensive Security & Tooling** - password/hash recovery engines, Windows auditing frameworks, exploitation workflows
+- **Automotive & Embedded Security** - CAN-bus attack & defense, ECU firmware reverse engineering, message authentication (SecOC / UDS)
+- **Secure Infrastructure & Detection** - Proxmox / OPNsense lab design, SIEM + IDS pipelines, Kerberos & PKI, Linux and kernel hardening
+- **Systems & Network Programming** - a C standard library from scratch, low-level automation, custom application-layer protocols
 
 ---
 
-### Hardened Unix Infrastructure with Kerberos Authentication
-*January 2026 • Academic Project*
+## Technical Toolbox
 
-Enterprise-grade secure Linux environment integrating centralized identity management and kernel-level defense mechanisms.
-
-**Security Implementation:**
-- **Identity Management:** Deployed Kerberos KDC on CentOS 9 for centralized authentication and principal management across distributed systems
-- **Secure Storage:** Integrated NFSv4 with Kerberos encryption modes (krb5p for privacy, krb5i for integrity) ensuring authenticated and protected remote file access
-- **Kernel Hardening:** Applied PaX and grsecurity patches on Hardened Gentoo providing ASLR enhancement, memory protection, and exploit mitigation
-- **Access Control:** Configured SELinux in Multi-Level Security (MLS) and Multi-Category Security (MCS) modes for data segregation across clearance levels
-- **PKI Architecture:** Established custom Certificate Authority securing Apache web servers with TLS/HTTPS
-
-**Stack:** Kerberos, NFSv4, SELinux, grsecurity, PKI/CA, Apache, CentOS, Hardened Gentoo
+| Domain | Technologies |
+|---|---|
+| **Languages** | C · C++ · x86/x64 Assembly · Python · Bash · PowerShell · SQL |
+| **Security** | Metasploit · Hashcat · Wireshark · Snort · OSSEC · Prelude SIEM · SELinux · grsecurity / PaX |
+| **Infrastructure** | Proxmox VE · KVM · Docker · Ansible · Vagrant · OPNsense · OpenVPN · Kerberos / PKI |
+| **Systems** | Linux internals (Arch / CentOS / Gentoo) · Windows internals & API · Kernel modules · LUKS / Btrfs |
 
 ---
 
-### [Auto-Archchroot](https://github.com/XpertLambda/Auto-Archchroot)
-*January 2025*
+## Selected Projects
 
-Intelligent automation framework for Arch Linux system recovery and chroot environment configuration.
+### Security Tooling & Offensive
 
-**Features:**
-- Automatic detection and analysis of system configurations including bootloader and partition schemes
-- Native support for LUKS full-disk encryption and Btrfs subvolume architectures
-- Generates executable recovery scripts for live environment troubleshooting and repair operations
+**[SysRecon](https://github.com/XpertLambda/SysRecon)** - Windows security auditing framework (C++ / Win32) for SOC teams and pentesters: automated enumeration of security configuration, posture assessment, and generated compliance & hardening reports.
 
-**Stack:** Python, Bash, Linux Internals, Cryptography (LUKS), Filesystem Management (Btrfs)
+**[Crasher](https://github.com/XpertLambda/Crasher)** - High-performance, multi-threaded hash-recovery toolkit (C) supporting MD5 / SHA-1 / SHA-256 across brute-force, probabilistic, and dictionary attacks, with an optimized wordlist-generation engine.
 
----
+### Automotive & Embedded Security
 
-### [ContainerPool](https://github.com/XpertLambda/ContainerPool)
-*January 2026 • Academic Project*
+**[ICSim](https://github.com/XpertLambda/ICSim)** - Instrument-cluster / CAN-bus security lab: a vulnerable simulator paired with a hardened variant adding **SecOC** message authentication (AES-128-CMAC) and **UDS** service hardening, plus interactive frame-injection and SecurityAccess tooling.
 
-Self-hosted Platform-as-a-Service featuring pre-initialized container pools with sub-second provisioning capabilities.
+**[ECU-Firmware-RE](https://github.com/XpertLambda/ECU-Firmware-RE)** - Reverse engineering of automotive ECU firmware: teardown, static analysis, and documentation of firmware internals and attack surface.
 
-**Technical Features:**
-- Multi-tenant user management system with secure file upload functionality
-- Automated infrastructure orchestration leveraging Ansible and Vagrant/KVM integration
-- RESTful API backend built with Flask managing Docker container lifecycle
-- Achieved <1 second deployment time through intelligent container pre-warming
+### Secure Infrastructure, Detection & Cloud
 
-**Stack:** Docker, Flask, Ansible, Vagrant, KVM, Shell Scripting, REST API Design
+**[Cyber Security CTF Environment](https://github.com/XpertLambda/CTF)** *(ongoing)* - Full Capture-The-Flag platform on **Proxmox VE** with a custom Python orchestrator driving the Proxmox API, an **OPNsense** gateway/firewall, OpenVPN student access, and host-level `tap`-interface isolation that holds even against in-VM `root` - hosting 15+ isolated challenges on a Dockerized CTFd.
 
----
+**Hardened Unix Infrastructure with Kerberos** *(academic)* - Enterprise Linux estate with a centralized **Kerberos** KDC, **NFSv4** with krb5p / krb5i, **SELinux** in MLS/MCS modes, a PaX/grsecurity-hardened Gentoo, and a custom Certificate Authority securing TLS services.
 
-### [SysRecon](https://github.com/XpertLambda/SysRecon)
-*Under Active Development*
+**Enterprise Intrusion Detection System** *(academic)* - Multi-layer detection stack unifying **Snort**, **OSSEC**, and **Prelude SIEM** with custom signatures and a real-time correlation engine for brute-force and lateral-movement detection.
 
-Comprehensive Windows security auditing framework designed for IT administrators, Security Operations Centers, and penetration testing teams.
+**[ContainerPool](https://github.com/XpertLambda/ContainerPool)** *(academic)* - Self-hosted Platform-as-a-Service with pre-warmed container pools reaching sub-second provisioning; a multi-tenant **Flask** REST backend orchestrating Docker via **Ansible** and **Vagrant / KVM**.
 
-**Capabilities:**
-- Automated enumeration and analysis of Windows security configurations
-- Security posture assessment with vulnerability identification
-- Generates detailed compliance and hardening reports
+### Systems & Network Programming
 
-**Stack:** C++, Windows API, Security Assessment Frameworks
+**[MiniGlibC](https://github.com/XpertLambda/MiniGlibC)** - A minimal C standard library built from scratch: custom memory allocator, string and I/O primitives, and shell-style utilities, with no external dependencies.
+
+**[Auto-Archchroot](https://github.com/XpertLambda/Auto-Archchroot)** - Arch Linux recovery automation (Python) that detects bootloader and partition layout - including **LUKS** encryption and **Btrfs** subvolumes - and generates ready-to-run chroot repair scripts.
+
+**[Multiplayer-AOE-Protocol](https://github.com/XpertLambda/Multiplayer-AOE-Protocol)** *(team lead)* - A custom low-latency, application-layer protocol bridging Python and C for synchronized real-time multiplayer strategy sessions.
+
+**[AIge-Of-EmpAIres](https://github.com/XpertLambda/AIge-Of-EmpAIres)** *(team lead)* - Real-time strategy game with autonomous AI opponents driven by decision-tree planning for economy, construction, and tactical combat.
 
 ---
 
-### [Multiplayer-AOE-Protocol](https://github.com/XpertLambda/Multiplayer-AOE-Protocol)
-Team Lead (6 Members) | *March 2025 • Academic Project*
+## Languages
 
-Real-time strategy game inspired by Age of Empires II featuring custom multiplayer networking architecture.
-
-**Technical Implementation:**
-- Hybrid Python-C communication system optimized for low-latency real-time gameplay
-- Custom application-layer protocol for synchronized multiplayer sessions
-- Efficient state synchronization for resource management and unit coordination
-
-**Stack:** Python, C, Socket Programming, Custom Network Protocols, Real-time Systems
+French (B2) · English (B2) · Arabic (Native)
 
 ---
 
-### [AIge-Of-EmpAIres](https://github.com/XpertLambda/AIge-Of-EmpAIres)
-Team Lead (7 Members) | *January 2025 • Academic Project*
-
-Real-time strategy game featuring intelligent AI opponents powered by decision tree algorithms.
-
-**AI Systems:**
-- Advanced autonomous resource management and strategic planning algorithms
-- Decision tree implementation enabling dynamic tactical combat behavior
-- Autonomous unit training, structure construction, and battlefield coordination
-
-**Stack:** Python, Artificial Intelligence, Decision Trees, Game Development
-
----
-
-### [MiniGlibC](https://github.com/XpertLambda/MiniGlibC)
-*October 2024*
-
-Minimalistic C standard library implementation built from scratch without external dependencies.
-
-**Implementation:**
-- Custom memory management primitives (malloc, free, memory operations)
-- String manipulation and file I/O operations
-- Shell-like utility functions for system-level programming
-
-**Stack:** C, Systems Programming, Low-level Development, Memory Management
-
----
-
-### Enterprise Intrusion Detection System
-*January 2024 • Academic Project*
-
-Multi-layered defensive security architecture simulating enterprise-grade network protection.
-
-**Architecture:**
-- Deployed unified security monitoring with Prelude SIEM aggregating events from multiple detection engines
-- Configured Snort for network-based intrusion detection with custom signature development
-- Integrated OSSEC for host-based security monitoring and log analysis
-- Developed custom detection rules for SSH brute-force attacks and lateral movement patterns
-- Implemented real-time correlation engine for cross-layer threat detection
-
-**Stack:** Prelude SIEM, Snort, OSSEC, iptables, Log Analysis, Network Traffic Analysis
-
----
-
-### [Crasher](https://github.com/XpertLambda/Crasher)
-*April 2023*
-
-High-performance cryptographic toolkit for hash analysis and password recovery operations.
-
-**Capabilities:**
-- Multi-algorithm hash decryption supporting MD5, SHA-1, and SHA-256
-- Multiple attack methodologies: ASCII brute-force, probabilistic generation, dictionary-based attacks
-- Optimized wordlist generation engine for password cracking campaigns
-
-**Stack:** C, Cryptographic Algorithms, Performance Optimization, Multi-threading
-
----
-
-## Contact
-
-**GitHub:** [github.com/XpertLambda](https://github.com/XpertLambda)  
-**LinkedIn:** [linkedin.com/in/ahmad-msaad](https://www.linkedin.com/in/ahmad-msaad)  
-**Email:** ahmad.saad@insa-cvl.fr  
-**Discord:** thelambda
-
-**Languages:** French (B2) • English (B2) • Arabic (Native)
-
----
-
-*Open to collaboration on security research, tool development, and infrastructure hardening projects.*
+<sub>Open to collaboration on security research, tool development, and infrastructure hardening.</sub>
